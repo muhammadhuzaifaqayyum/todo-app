@@ -68,3 +68,14 @@
   align-items: center;
 }
 
+.checked{
+  color: rgb(80, 0, 117);
+}
+
+.checked::after{
+  content: "Completed!";
+  color: rgb(98, 0, 128);
+  margin-left: 25px;
+  text-decoration:none !important;
+  font-weight: bold;
+}
