@@ -51,6 +51,10 @@
   font-size: 14px;
 }
 
+.todo-add-btn:focus {
+  outline: none;
+}
+
 .input-field {
   width: 400px;
   height: 40px;
@@ -58,6 +62,10 @@
   padding: 0 20px;
   font-size: 16px;
   border-radius: 12px;
+}
+
+.input-field:focus {
+  outline: 1px solid #af7eeb;
 }
 
 .add-todo {
@@ -69,13 +77,25 @@
 }
 
 .checked{
-  color: rgb(80, 0, 117);
+  color: rgb(5, 163, 39);
 }
 
 .checked::after{
-  content: "Completed!";
-  color: rgb(98, 0, 128);
+  content: "Done!";
+  color: rgb(3, 145, 33);
   margin-left: 25px;
   text-decoration:none !important;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .bar {
+    width: 330px;
+  }
+  .todo-list {
+    width: 330px;
+  }
+  .input-field {
+    width: 330px;
+  }
 }
