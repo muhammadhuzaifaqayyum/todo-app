@@ -17,13 +17,12 @@
   cursor: pointer;
 }
 
-.todo-tik-icon{
+.todo-tik-icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
   margin-left: auto;
   margin-right: 10px !important;
-  
 }
 
 .todo-list {
@@ -76,15 +75,15 @@
   align-items: center;
 }
 
-.checked{
+.checked {
   color: rgb(5, 163, 39);
 }
 
-.checked::after{
+.checked::after {
   content: "Done!";
   color: rgb(3, 145, 33);
   margin-left: 25px;
-  text-decoration:none !important;
+  text-decoration: none !important;
   font-weight: bold;
 }
 

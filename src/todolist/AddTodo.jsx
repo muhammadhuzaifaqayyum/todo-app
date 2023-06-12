@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react"
-import "./todo.css"
+import { useState } from "react";
+import "./todo.css";
 
 export const AddTodo = ({ addTodo }) => {
-  const [newTask, setNewTask] = useState("")
+  const [newTask, setNewTask] = useState("");
 
   const onChange = (e) => {
-    setNewTask(e.target.value)
-  }
+    setNewTask(e.target.value);
+  };
 
   return (
     <div className="add-todo">
@@ -21,12 +21,12 @@ export const AddTodo = ({ addTodo }) => {
       <button
         className="todo-add-btn rounded-md"
         onClick={() => {
-          addTodo(newTask)
-          setNewTask("")
+          addTodo(newTask);
+          setNewTask("");
         }}
       >
         + New Task
       </button>
     </div>
-  )
-}
+  );
+};
